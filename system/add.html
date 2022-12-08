@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ADD PARTICIPANTS</title>
+    <link rel="stylesheet" href="./assets/css/add.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="">HOME</a></li>
+            <li><a href="">ADD</a></li>
+            <li><a href="">CHECK</a></li>
+            <li><a href="">STATS</a></li>
+            <li><a href="">QUESTIONS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Add Participant</h1>
+    </header>
+
+    <section id="single-add">
+        <h2>Add a single participant</h2>
+        <p>If you are adding a participant you can add a single participant using the form below</p>
+    </section>
+
+    <section id="add-section">
+        <form id="site-form">
+            <p>Which site is the participant screening at:</p>
+            <input type="radio" id="cornell" value="cornell" name="site-add" />
+            <label for="cornell">Cornell</label><br>
+
+            <input type="radio" id="cuimc" value="cuimc" name="site-add" />
+            <label for="cuimc">Columbia University Irving Medical Center</label><br>
+
+            <input type="radio" id="nybc" value="nybc" name="site-add" />
+            <label for="nybc">NYBC</label><br>
+
+            <input type="radio" id="rutgers" value="rutgers" name="site-add" />
+            <label for="nybc">Rutgers</label><br>
+
+            <input type="radio" id="harlem" value="harlem" name="site-add" />
+            <label for="nybc">Harlem Prevention Center</label><br>
+
+            <input type="radio" id="bronx" value="bronx" name="site-add" />
+            <label for="nybc">Bronx Prevention Center</label><br>
+
+            <label for="fn">What is the participants first name:</label>
+            <input type="text" id="fn" name="firstname" /><br>
+            
+            <label for="ln">What is the participants last name:</label>
+            <input type="text" id="ln" name="lastname" /><br>
+
+            <label for="dob">What is the participants date of birth:</label>
+            <input type="date" id="dob" name="dob" /><br>
+
+            <label for="digits">What is the participants last 4 digits of id:</label>
+            <input type="text" id="digits" name="digits" /><br>
+
+            <label for="study">What study is the participant screening for:</label>
+            <input type="text" id="study" name="study" /><br>
+        </form>
+
+        <button type="submit" id="add-px">ADD</button>
+    </section>
+
+    <section id="multiple-add">
+        <h2>Add Multiple Participants via an excel upload</h2>
+        <p>Insert instructions here</p>
+    </section>
+
+    <section id="file-add">
+        <p>FILE UPLOAD HERE</p>
+    </section>
+
+    <section id="file-submit">
+        <button type="submit" id="file-submit-btn">SUBMIT FILE</button>
+    </section>
+
+    <script src="./assets/js/add.js"></script>
+</body>
+
+</html>

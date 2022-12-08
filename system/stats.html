@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STATS PARTICIPANTS</title>
+    <link rel="stylesheet" href="./assets/css/stats.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a href="./homepage.html">HOME</a></li>
+            <li><a href="./add.html" target="_blank">ADD</a></li>
+            <li><a href="./check.html" target="_blank">CHECK</a></li>
+            <li><a href="./stats.html" target="_blank">STATS</a></li>
+            <li><a href="./question.html" target="_blank">QUESTIONS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Site Specific Particpant Stats</h1>
+        <ol>
+            <li>First select all choices you would like stats to appear from</li>
+            <li>Then hit the submit button to save the choices</li>
+            <li>Click the picture of your site so the results filter specifically to your site</li>
+            <li>Your stats will appear at the bottom of the page</li>
+        </ol>
+    </header>
+
+    <section>
+        <h2>What pipeline stats are you interested in finding:</h2>
+        <p>Select as many as want:</p>
+
+        <form id="stats-form">
+            <input type="checkbox" name="total-px-week" id="total-px-week" value="choice1" />
+            <label for="total-px" >Total Particpants - in the last week</label><br>
+
+            <input type="checkbox" name="total-px-month" id="total-px-month" value="choice2"/>
+            <label for="total-px" >Total Particpants - in the last month</label><br>
+
+            <input type="checkbox" name="total-px" id="total-px" value="choice3"/>
+            <label for="total-px" >Total Particpants - all time</label><br>
+
+            <input type="checkbox" name="study" id="study" value="choice4"/>
+            <label for="total-px" >Total Participants Screened By Study</label><br>
+  
+            <input type="checkbox" name="age" id="age" value="choice5"/>
+            <label for="total-px" >Average Age</label><br>
+        </form>
+
+        <button type="submit" id="stats-choices">Submit</button>
+    </section>
+
+    <h2>Which site do you want the stats for:</h2>
+
+    <section id="site-section">
+    
+        <div id="cuimc" class="btn-div"><button type="submit" id="cuimc-btn"><img src="./assets/pictures/cuimc_logo.png"></button></div>
+        <div id="bronx" class="btn-div"><button type="submit" id="bronx-btn"><img src="./assets/pictures/bronx_logo.png"></button></div>
+        <div id="cornell" class="btn-div"><button type="submit" id="cornell-btn"><img src="./assets/pictures/cornell_logo.png"></button></div>
+        <div id="harlem" class="btn-div"><button type="submit" id="harlem-btn"><img src="./assets/pictures/harlem_logo.png"></button></div>
+        <div id="nybc" class="btn-div"><button type="submit" id="nybc-btn"><img src="./assets/pictures/nybc_logo.png"></button></div>
+        <div id="rutgers" class="btn-div"><button type="submit" id="rutgers-btn"><img src="./assets/pictures/rutgers_logo.png"></button></div>
+        
+    </section>
+
+    <h3>Stats:</h3>
+
+    <section id="stats">
+        
+    </section>
+
+    <script src="./assets/js/stats.js"></script>
+</body>
+
+</html>

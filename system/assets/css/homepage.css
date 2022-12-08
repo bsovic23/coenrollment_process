@@ -1,0 +1,93 @@
+/* Root Variables */
+:root{
+    --background: darkgray;
+}
+
+/* Body =================================================*/
+
+body {
+    background-color: lightblue;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+body header h1 {
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background);
+}
+
+/* Intro Box =================================================*/
+.intro {
+    background-color: var(--background);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#brit-sovic {
+    height: 100px;
+    width: 100px;
+}
+
+/* To Do Section ============================================ */
+/* Box */
+.to-do {
+    background-color: var(--background);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Choices */
+.to-do li {
+    list-style-type: none;
+}
+
+.to-do div {
+    padding: 20px;
+    background-color: rgb(0, 255, 238);
+    margin: 10px;
+    border: 3px solid black;
+}
+
+.to-do li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.to-do div:hover {
+    background-color: rgb(225, 255, 0);
+}
+
+/* About Me Section ============================================ */
+.about-me {
+    background-color: var(--background);
+    padding: 20px;
+}
+
+.about-me a {
+    text-decoration: none;
+}
+
+.about-me a:hover {
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* Sites Using This Program Section ============================================ */
+.sites img {
+    height: 150px;
+    width: 200px;
+}
+
+/* Studies Box ============================================ */
+.studies-box p a {
+    text-decoration: none;
+}
+
+.studies-box p a:hover {
+    background-color: yellow;
+    padding: 5px;
+}
+
+/* Footer ============================================ */
