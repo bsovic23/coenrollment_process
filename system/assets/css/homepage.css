@@ -6,7 +6,7 @@
 /* Body =================================================*/
 
 body {
-    background-color: lightblue;
+    background-color: #5998C5;
     font-family: monospace;
     font-size: 16px;
 }
@@ -45,7 +45,7 @@ body header h1 {
 
 .to-do div {
     padding: 20px;
-    background-color: rgb(0, 255, 238);
+    background-color: #C96480;
     margin: 10px;
     border: 3px solid black;
 }
