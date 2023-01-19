@@ -1,43 +1,17 @@
-const sequelize = require('../config/connection');
-const { Model, DataTypes } = require('sequelize');
+const { Schema, model } = require('mongoose');
 
-class User extends Model {};
-
-User.init(
+const userSchema = new Schema(
     {
-        id: {
-            type: DataTypes.INTEGER,
-            autoIncrement: true,
-            primaryKey: true,
-            isNull: false
-        },
-        user_fn: {
-            type: DataTypes.STRING,
-            isNull: false,
-        },
-        user_ln: {
-            type: DataTypes.STRING,
-            isNull: false
-        },
-        user_site: {
-            type: DataTypes.STRING,
-            isNull: false
-        },
-        user_email: {
-            type: DataTypes.STRING,
-            isNull: false,
-            validate: {
-                isEmail: true
-            }
-        }
+        user_fn: String
     },
     {
-        sequelize,
-        timestamps: true,
-        freezeTableName: true,
-        underscored: true,
-        modelName: 'user',
+        user_ln: String
+    },
+    {
+        user_email: String
     }
 );
+
+const User = model('User', userSchema);
 
 module.exports = User;
