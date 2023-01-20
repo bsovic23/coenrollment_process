@@ -1,5 +1,13 @@
-const Participant = require("../models/Participant");
-const User = require("../models/User");
+// Models
+const {
+  Participant,
+  User,
+  Site, 
+  Study
+} = require('../models');
+
+// Other Const
+const { AuthenticationError } = require('apollo-server-express');
 
 const resolvers = {
     
@@ -35,6 +43,23 @@ const resolvers = {
   },
 
   Mutation: {
+      // Login
+      login: async (parent, { userEmail, userPassword }) => {
+        const user = await User.findOne({ userEmail });
+
+        if (!user) {
+          throw new AuthenticationError('There is no user');
+        }
+        
+        const correctUser = await user.isCorrectPassword(userPassword);
+
+        if (!correctUser) {
+          throw new AuthenticationError('Incorrect password');
+        }
+        
+        return user
+      },
+
       // Add User
       addUser: async (parent, args) => {
         const user = await User.create(args);

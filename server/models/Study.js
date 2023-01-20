@@ -8,6 +8,6 @@ const studySchema = new Schema(
 }
 );
 
-const Study = model('User', studySchema);
+const Study = model('Study', studySchema);
 
 module.exports = Study;
