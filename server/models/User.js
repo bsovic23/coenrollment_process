@@ -2,13 +2,16 @@ const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
     {
-        user_fn: String
+        userFn: String
     },
     {
-        user_ln: String
+        userLn: String
     },
     {
-        user_email: String
+        userEmail: String
+    },
+    {
+        userPassword: String
     }
 );
 

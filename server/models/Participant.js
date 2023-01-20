@@ -2,10 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const participantSchema = new Schema(
     {
-        first_name: {
+        firstName: {
             type: String
         },
-        last_name: {
+        lastName: {
             type: String
         },
         dob: {
@@ -23,10 +23,10 @@ const participantSchema = new Schema(
         zipcode: {
             type: Number
         },
-        entered_by: {
+        enteredBy: {
             type: String        // User model
         },
-        entered_at: {
+        enteredAt: {
             type: Date,
             default: Date.now
         }

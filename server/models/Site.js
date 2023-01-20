@@ -2,13 +2,13 @@ const { Schema, model } = require('mongoose');
 
 const siteSchema = new Schema(
     {
-        site_name: String
+        siteName: String
     },
     {
-        site_email: String
+        siteEmail: String
     },
     {
-        site_coordinator: String
+        siteCoordinator: String
     }
 );
 

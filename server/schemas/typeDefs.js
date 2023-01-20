@@ -4,47 +4,49 @@ const typeDefs = gql`
 
     type Participant {
         _id: ID
-        first_name: String
-        last_name: String
+        firstName: String
+        lastName: String
         dob: String
         digits: Int
         site: String
         study: String
         zipcode: Int
-        entered_by: String
-        entered_at: String
+        enteredBy: String
+        enteredAt: String
     }
     type Question {
         _id: ID
-        q_body: String
+        qBody: String
     }
     type Study {
         _id: ID
-        study_name: String
-        study_year: Int
+        studyName: String
+        studyYear: Int
     }
     type User {
-        id: ID
-        user_fn: String
-        user_ln: String
-        user_email: String
-        user_password: String
+        _id: ID
+        userFn: String
+        userLn: String
+        userEmail: String
+        userPassword: String
     }
     type Site {
         _id: ID
-        site_name: String
-        site_email: String
-        site_coordinator: String
+        siteName: String
+        siteEmail: String
+        siteCoordinator: String
     }
+    
     type Query {
         getParticipants: [Participant]
-        participantByName(first_name: String!): [Participant]
-        participantByEnter(entered_by: String!): [Participant]
+        participantByName(firstName: String!): [Participant]
+        participantByEnter(enteredBy: String!): [Participant]
         participantByStudy(study: String!): [Participant]
     }
+
     type Mutation {
-        addUser(user_fn: String!, user_ln: String!, user_email: String!, user_password: String!): User
-        addParticipant(first_name: String!, last_name: String!, dob: String!, digits: Int!, site: String!, study: String!, zipcode: String!, entered_by: String!): Participant
+        addUser(userFn: String!, userLn: String!, userEmail: String!, userPassword: String!): User
+        addParticipant(firstName: String!, lastName: String!, dob: String!, digits: Int!, site: String!, study: String!, zipcode: String!, enteredBy: String!): Participant
     }
 `;
 
