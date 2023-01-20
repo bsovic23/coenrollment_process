@@ -10,14 +10,20 @@ const resolvers = {
       },
 
       // Get All Participants By First Name Entered
-      participantByName: async (parent, { firstName }) => {
-        const params = first_name ? { firstName } : {};
+      participantByFirstName: async (parent, { firstName }) => {
+        const params = firstName ? { firstName } : {};
+        return Participant.find(params);
+      },
+
+      // Get All Participants By Last Name Entered
+      participantByLastName: async (parent, { lastName }) => {
+        const params = lastName ? { lastName } : {};
         return Participant.find(params);
       },
 
       // Get All Participants By User Who Entered
       participantByEnter: async (parent, { enteredBy }) => {
-        const params = entered_by ? { enteredBy } : {};
+        const params = enteredBy ? { enteredBy } : {};
         return Participant.find(params);
       },
 
@@ -37,8 +43,10 @@ const resolvers = {
       },
 
       // Add Participant
-      addParticipant: async () => {
+      addParticipant: async (parent, args) => {
+        const person = await Participant.create(args);
 
+        return person;
       }
   }
   };

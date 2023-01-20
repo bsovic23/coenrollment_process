@@ -1,15 +1,17 @@
 const { Schema, model } = require('mongoose');
 
 const siteSchema = new Schema(
-    {
-        siteName: String
+{
+    siteName: {
+        type: String
     },
-    {
-        siteEmail: String
+    siteEmail: {
+        type: String
     },
-    {
-        siteCoordinator: String
+    siteCoordinator: {
+        type: String
     }
+}
 );
 
 const Site = model('Site', siteSchema);

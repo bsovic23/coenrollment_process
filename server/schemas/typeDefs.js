@@ -14,22 +14,27 @@ const typeDefs = gql`
         enteredBy: String
         enteredAt: String
     }
+
     type Question {
         _id: ID
         qBody: String
     }
+
     type Study {
         _id: ID
         studyName: String
         studyYear: Int
     }
+
     type User {
         _id: ID
         userFn: String
         userLn: String
         userEmail: String
         userPassword: String
+        userPxEnter: [Participant]
     }
+
     type Site {
         _id: ID
         siteName: String
@@ -39,7 +44,8 @@ const typeDefs = gql`
     
     type Query {
         getParticipants: [Participant]
-        participantByName(firstName: String!): [Participant]
+        participantByFirstName(firstName: String!): [Participant]
+        participantByLastName(lastName: String!): [Participant]
         participantByEnter(enteredBy: String!): [Participant]
         participantByStudy(study: String!): [Participant]
     }
