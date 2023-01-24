@@ -5,3 +5,24 @@
 
 
 /* Header */
+
+
+
+
+
+/* Homepage ================================================ */
+.homepage #brit-picture {
+    height: 200px;
+    width: 200px;
+}
+
+.homepage .home-sites li {
+    display: inline-block;
+}
+
+.homepage .home-sites .site-picture {
+    height: 175px;
+    width: 250px;
+    margin: 5px;
+    border: black solid 2px;
+}

@@ -6,6 +6,13 @@ function Homepage() {
     return(
         <section class="homepage">
             <div class="home-intro">
+                <div>
+                <img src=  
+                    {require("../../images/brit_img.png")}
+                    alt="picture of Brit Sovic" 
+                    id="brit-picture"/>
+                </div>
+                <div>
                 My name is Brit Sovic. I am an employee within the Divison of Infectious Diseases at Columbia University Irving Medical 
                 Center. I created the inital CO-ENROLLMENT weekly screening process back in 2019. Since then, I have coded and developed
                  this program as a way to streamline and allow access to any one site individual at any point. A site member can enter
@@ -13,6 +20,7 @@ function Homepage() {
                  to study recruitment and enrollment.
                 <br />
                 I hope you enjoy this intial version. If you have any questions or suggestions to the site you can go to the 'Submit Error/Question' tab. I will receive the request and respond as soon as possible.
+                </div>
             </div>
 
             <div class="home-about">
@@ -23,7 +31,7 @@ function Homepage() {
                     <li>Syracuse University Falk College of Sport & Human Dynamics: BS - Public Health</li>
                 </ul>
                 <div>
-                    <h3>Find me on:</h3>
+                    <h3>Click the icon to find me on:</h3>
                     <li><a href="github link" target="_blank">< AiFillGithub /></a></li>
                     <li><a href="linkedin link" target="_blank">< AiFillLinkedin /></a></li>
                 </div>
@@ -41,12 +49,36 @@ function Homepage() {
 
             <div class="home-sites">
                 <h3>Sites currently using this program:</h3>
-                <li>Site 1</li>
-                <li>Site 1</li>
-                <li>Site 1</li>
-                <li>Site 1</li>
-                <li>Site 1</li>
-                <li>Site 1</li>
+                <li><img src=  
+                    {require("../../images/bronx_logo.png")}
+                    alt="picture of Brit Sovic" 
+                    class="site-picture"/>
+                </li>
+                <li><img src=  
+                    {require("../../images/cornell_logo.png")}
+                    alt="picture of Brit Sovic" 
+                    class="site-picture"/>
+                </li>
+                <li><img src=  
+                    {require("../../images/cuimc_logo.png")}
+                    alt="picture of Brit Sovic" 
+                    class="site-picture"/>
+                </li>
+                <li><img src=  
+                    {require("../../images/harlem_logo.png")}
+                    alt="picture of Brit Sovic" 
+                    class="site-picture"/>
+                </li>
+                <li><img src=  
+                    {require("../../images/nybc_logo.png")}
+                    alt="picture of Brit Sovic" 
+                    class="site-picture"/>
+                </li>
+                <li><img src=  
+                    {require("../../images/rutgers_logo.png")}
+                    alt="picture of Brit Sovic" 
+                    class="site-picture"/>
+                </li>
             </div>  
         </section>
     )
