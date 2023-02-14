@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import Participants from '../Participants';
 
 function Homepage() {
     return(
@@ -80,6 +81,10 @@ function Homepage() {
                     class="site-picture"/>
                 </li>
             </div>  
+
+            <div>
+                <Participants />
+            </div>
         </section>
     )
 };

@@ -4,8 +4,11 @@ const studySchema = new Schema(
     {
         studyName: {
             type: String
+        },
+        studyYear: {
+            type: String
+        }
     }
-}
 );
 
 const Study = model('Study', studySchema);

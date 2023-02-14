@@ -7,17 +7,19 @@ const typeDefs = gql`
         firstName: String
         lastName: String
         dob: String
-        digits: Int
+        digits: String
         site: String
         study: String
-        zipcode: Int
+        zipcode: String
         enteredBy: String
         enteredAt: String
     }
 
-    type Question {
+    type Site {
         _id: ID
-        qBody: String
+        siteName: String
+        siteEmail: String
+        siteCoordinator: String
     }
 
     type Study {
@@ -35,13 +37,6 @@ const typeDefs = gql`
         userPxEnter: [Participant]
     }
 
-    type Site {
-        _id: ID
-        siteName: String
-        siteEmail: String
-        siteCoordinator: String
-    }
-    
     type Query {
         getParticipants: [Participant]
         participantByFirstName(firstName: String!): [Participant]
@@ -52,7 +47,7 @@ const typeDefs = gql`
 
     type Mutation {
         addUser(userFn: String!, userLn: String!, userEmail: String!, userPassword: String!): User
-        addParticipant(firstName: String!, lastName: String!, dob: String!, digits: Int!, site: String!, study: String!, zipcode: String!, enteredBy: String!): Participant
+        addParticipant(firstName: String!, lastName: String!, dob: String!, digits: String!, site: String!, study: String!, zipcode: String!, enteredBy: String!): Participant
     }
 `;
 

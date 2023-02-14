@@ -9,22 +9,22 @@ const participantSchema = new Schema(
             type: String
         },
         dob: {
-            type: Date
+            type: String
         },
         digits: {
-            type: Number
+            type: String
         },
         site: {
-            type: String        // site model
+            type: String
         },
         study: {
             type: String
         },
         zipcode: {
-            type: Number
+            type: String
         },
         enteredBy: {
-            type: String        // User model
+            type: String
         },
         enteredAt: {
             type: Date,
