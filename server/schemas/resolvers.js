@@ -47,23 +47,6 @@ const resolvers = {
   },
 
   Mutation: {
-      // Login
-      login: async (parent, { userEmail, userPassword }) => {
-        const user = await User.findOne({ userEmail });
-
-        if (!user) {
-          throw new AuthenticationError('There is no user');
-        }
-        
-        const correctUser = await user.isCorrectPassword(userPassword);
-
-        if (!correctUser) {
-          throw new AuthenticationError('Incorrect password');
-        }
-        
-        return user
-      },
-
       // Add User
       addUser: async (parent, args) => {
         const user = await User.create(args);

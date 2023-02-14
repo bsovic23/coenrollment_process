@@ -26,7 +26,7 @@ function Homepage() {
             <div class="home-about">
                     <h3>Brit Sovic, MPH</h3>
                 <ul>
-                    <li>Columbia University: Full Stack/Web Development Coding Certificate</li>
+                    <li>Columbia University: Full Stack Web Development Coding Certificate</li>
                     <li>Tulane University School of Public Health and Tropical Medicine: MPH - Epidemiology </li>
                     <li>Syracuse University Falk College of Sport & Human Dynamics: BS - Public Health</li>
                 </ul>
