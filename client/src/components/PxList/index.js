@@ -1,14 +1,14 @@
 import React from 'react';
 
-const PxList = ({ participants }) => {
-    if (!participants.length) {
+const PxList = ({ getParticipants }) => {
+    if (!getParticipants.length) {
         return <h1>NO participants</h1>;
     }
 
     return(
         <div>
-            {participants &&
-            participants.map(px => (
+            {getParticipants &&
+            getParticipants.map(px => (
                 <div>
                     {px.firstName}
                 </div>

@@ -1,0 +1,26 @@
+{
+  "name": "coenrollment_process",
+  "version": "1.0.0",
+  "description": "## Project Description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsovic23/coenrollment_process.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bsovic23/coenrollment_process/issues"
+  },
+  "homepage": "https://github.com/bsovic23/coenrollment_process#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

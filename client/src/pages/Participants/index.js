@@ -9,8 +9,9 @@ const Participants = () => {
 
     const { loading, data } = useQuery(QUERY_ALL_PX);
 
-    const participants = data?.participants || {};
-    console.log(participants);
+    const getParticipants = data?.getParticipants || {};
+
+    console.log(getParticipants);
 
     return(
         <section>
@@ -19,7 +20,7 @@ const Participants = () => {
                 {loading ? (
                     <div>Loading...</div>
                 ) : (
-                    <PxList participants={participants} />
+                    <PxList getParticipants={getParticipants} />
                 )}
                 </div>
             </div>
